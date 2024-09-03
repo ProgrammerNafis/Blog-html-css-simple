@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f9fcff;
+    }
+
+    nav ul li a {
+      font-family: "Roboto", "Open Sans", sans-serif;
+      color: #183b56 !important;
+      padding: 20px !important;
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+    nav .btn-glow {
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 16px;
+      color: #1565d8;
+      background-color: white;
+      border: 2px solid #1565d8;
+      border-radius: 25px;
+      margin-left: 20px;
+      width: 131px;
+      height: 48px;
+    }
+
+    .oval-img {
+      background-image: url(Oval.png);
+      background-repeat: no-repeat;
+    }
+
+    .hero-section .h-re-t {
+      font-family: "Roboto";
+      font-weight: bold;
+      color: #183b56;
+      font-size: 56px;
+      padding-bottom: 15px;
+    }
+
+    .hero-section .p-t-hero {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      color: #183b56;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      width: 82%;
+      padding-bottom: 15px;
+    }
+
+    .hero-section .src-box {
+      width: 555px;
+      height: 56px;
+      border: none;
+      background-color: #ffffff;
+    }
+
+    .hero-section .src-box:focus {
+      outline: none;
+      border: none;
+    }
+
+    .hero-section .src-box::placeholder {
+      color: #959ead;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      margin-left: 2rem;
+      font-style: italic;
+      text-transform: capitalize;
+      text-indent: 27px;
+    }
+
+    .hero-section .serach-btn {
+      position: absolute;
+      top: 21px;
+      left: 15px;
+    }
+
+    .hero-section .sign-in-btn {
+      background-color: #1565d8 !important;
+      color: white;
+      position: relative !important;
+      top: -3px !important;
+      right: 84px !important;
+    }
+
+    #hero-cont-tm {
+      padding-top: 43px;
+    }
+
+    .pl-id-in-email-foot::placeholder {
+      padding: 10px;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 16;
+      color: #5a7184;
+    }
+
+    .pl-id-in-email-foot {
+      border-radius: 7px;
+    }
+  </style>
+
+  <body>
+    <!-- NAVBAR START -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="image_base/Logo.svg" width="90px" alt="" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Article</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Faq</a>
+              </li>
+            </ul>
+            <button class="btn-glow">Sign In</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--  NAVBAR END -->
+
+    <!-- HEro SECTON START-->
+
+    <div class="hero-section pt-3">
+      <div class="oval-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12" id="hero-cont-tm">
+              <h1 class="h-re-t">Read the most interesting articles</h1>
+              <h3 class="p-t-hero">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </h3>
+              <div class="src-s" style="position: relative">
+                <img
+                  src="image_base/search.png"
+                  width="16px"
+                  class="serach-btn"
+                  alt=""
+                />
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="search article"
+                  class="src-box shadow p-3 mb-5 rounded"
+                />
+                <input type="submit" class="btn sign-in-btn" value="Search" />
+              </div>
+              <span
+                id="puptagsMain"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 16;
+                  font-weight: bold;
+                  font-style: italic;
+                  padding-right: 1rem;
+                  color: #5a7184;
+                "
+                >Popular Tags:</span
+              >
+              <span
+                id="puptags"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14;
+                  font-weight: bold;
+                  font-style: italic;
+                  background-color: #e2ecfb;
+                  color: #1565d8;
+                  padding: 10px;
+                  margin: 4px;
+                  border-radius: 5px;
+                "
+                >Desgin</span
+              >
+              <span
+                id="puptags"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14;
+                  font-weight: bold;
+                  font-style: italic;
+                  background-color: #e2ecfb;
+                  color: #1565d8;
+                  padding: 10px;
+                  margin: 4px;
+                  border-radius: 5px;
+                "
+              >
+                User Experience
+              </span>
+              <span
+                id="puptags"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14;
+                  font-weight: bold;
+                  font-style: italic;
+                  background-color: #e2ecfb;
+                  color: #1565d8;
+                  padding: 10px;
+                  margin: 4px;
+                  border-radius: 5px;
+                "
+              >
+                User Interface
+              </span>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img
+                class="live-chat-pics"
+                src="image_base/LIve Chat.svg"
+                width="700px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEro SECTON END-->
+
+    <!-- Main Section START-->
+
+    <div class="container" style="padding-top: 1rem">
+      <div class="row py-5" style="padding-right: 7rem; padding-left: 1rem">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/ales-nesetril-Im7lZjxeLhg-unsplash 1.jpg"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/diego-hernandez-MSepzbKFz10-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/rodion-kutsaiev-0VGG7cqTwCo-unsplash 1.png"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/julian-wan-WNoLnJo7tS8-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/thisisengineering-raeng-sbFmoKBK7jU-unsplash 1.png"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/griffin-wooldridge-7Sz71zuuW4k-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+      </div>
+      <div class="row g-4" style="padding-right: 7rem; padding-left: 1rem">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/alex-knight-2EJCSULRwC8-unsplash 1.png"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/griffin-wooldridge-7Sz71zuuW4k-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/alex-kotliarskyi-ourQHRTE2IM-unsplash 1.png"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/griffin-wooldridge-7Sz71zuuW4k-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!--Csutom CArd-->
+
+          <div
+            class="card"
+            style="
+              background-color: #ffffff;
+              width: 360px;
+              height: 534px;
+              border: none;
+              outline: none;
+            "
+          >
+            <div class="card-image">
+              <img
+                src="image_base/alexander-shatov-mr4JG4SYOF8-unsplash 1.png"
+                width="360px"
+                alt=""
+              />
+            </div>
+            <div class="card-title" f>
+              <h2
+                style="
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 28px;
+                  padding-top: 1.5rem;
+                  padding-left: 2rem;
+                "
+              >
+                Future Of Work For External Journal
+              </h2>
+            </div>
+            <div class="card-text">
+              <p
+                style="
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 18px;
+                  font-style: normal;
+                  line-height: 32px;
+                  padding: 0 2rem;
+                "
+              >
+                Majority of peole will work in jobs that don’t exist today.
+              </p>
+            </div>
+            <div class="author-about d-flex gap-3" style="padding: 0 2rem">
+              <img
+                src="image_base/griffin-wooldridge-7Sz71zuuW4k-unsplash 1.png"
+                width="40"
+                height="40"
+                alt=""
+                style="margin-top: 0.8rem"
+              />
+              <div class="aht-na-ver">
+                <h4
+                  class="autho-name"
+                  style="
+                    font-family: 'Open Sans';
+                    font-weight: 700;
+                    font-style: italic;
+                    font-size: 16px;
+                    color: #183b56;
+                    display: block !important;
+                    margin-top: 0.8rem;
+                  "
+                >
+                  Johanna Murray
+                </h4>
+                <!-- <div class="veryfi-stat"> -->
+                <img
+                  src="image_base/Icon.svg"
+                  width="16px"
+                  style="position: relative; top: -5px; left: -4px"
+                  alt=""
+                  class="verify-ico"
+                />
+                <span
+                  class="v-writer"
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 14px;
+                    color: #5a7184;
+                    position: relative;
+                    top: -5px;
+                    left: -3px;
+                  "
+                  >Verified Writer</span
+                >
+                <!-- </div> -->
+              </div>
+              <div class="post-auth-date">
+                <p
+                  style="
+                    font-family: 'Open Sans';
+                    font-style: italic;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #5a7184;
+                    margin-left: 3rem;
+                    position: relative;
+                    top: 1.5rem;
+                  "
+                >
+                  02 May
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Csutom CArd-->
+        </div>
+      </div>
+    </div>
+
+    <div class="" style="padding-top: 3rem">
+      <div class="btn more-articles d-flex justify-content-center">
+        <button
+          style="
+            width: 181px;
+            height: 48px;
+            border-radius: 15px;
+            font-family: 'Open Sans';
+            font-weight: bold;
+            font-size: 16px;
+            color: #1565d8;
+            background-color: #f9fcff;
+            border: 2px solid #1565d8;
+          "
+          class="text-center"
+        >
+          More articles
+          <img
+            style="margin-left: 9px"
+            src="image_base/Icon.png"
+            width="13px"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+    <!-- Main Section END-->
+
+    <!-- footer START-->
+
+    <footer class="container">
+      <div
+        class="row container"
+        style="
+          color: white;
+          background-image: url(image_base/CTA.png);
+          background-repeat: no-repeat;
+          width: 100%;
+
+          padding: 5rem;
+        "
+      >
+        <div class="d-flex justify-content-around" style="padding-top: 8rem">
+          <div class="col-6" style="padding-top: 3rem">
+            <h2
+              style="
+                font-family: 'Roboto';
+                font-size: 36px;
+                font-weight: bold;
+                padding-bottom: 2rem;
+              "
+            >
+              Get our stories delivered From us to your inbox weekly.
+            </h2>
+            <input
+              class="pl-id-in-email-foot"
+              style="width: 320px; height: 56px; background-color: #ffffff"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Enter Email"
+            />
+            <button
+              class="sub-email-btn"
+              style="
+                width: 166px;
+                height: 56px;
+                border-radius: 6px;
+                background-color: #1565d8;
+                color: #ffffff;
+                border: none;
+                outline: none;
+              "
+            >
+              Get started
+            </button>
+            <p
+              style="
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #5a7184;
+                padding-top: 2rem;
+              "
+            >
+              Get a response tomorrow if you submit by 9pm today. If we received
+              after 9pm will get a reponse the following day.
+            </p>
+          </div>
+
+          <div class="col-6">
+            <img src="image_base/card.png" width="578px" height="427" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer START-->
+
+    <script>
+      const SrcBox = document.querySelector(".src-box");
+
+      function handleFocus(e) {
+        const SrcPng = document.querySelector(".serach-btn");
+        SrcPng.style.display = "none";
+      }
+
+      SrcBox.addEventListener("focus", handleFocus);
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
